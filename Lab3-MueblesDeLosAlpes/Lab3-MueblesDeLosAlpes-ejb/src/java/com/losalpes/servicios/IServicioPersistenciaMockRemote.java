@@ -59,6 +59,6 @@ public interface IServicioPersistenciaMockRemote
      */
     public java.lang.Object findById(java.lang.Class c, java.lang.Object id);
     
-    public void comprar(List<RegistroVenta> compra) throws CupoInsuficienteException;
+    public void comprar(List<RegistroVenta> compra) throws CupoInsuficienteException, OperacionInvalidaException;
     
 }

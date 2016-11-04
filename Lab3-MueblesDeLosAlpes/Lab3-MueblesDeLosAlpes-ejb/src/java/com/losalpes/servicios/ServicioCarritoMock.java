@@ -15,6 +15,7 @@ import com.losalpes.entities.Mueble;
 import com.losalpes.entities.RegistroVenta;
 import com.losalpes.entities.Usuario;
 import com.losalpes.excepciones.CupoInsuficienteException;
+import com.losalpes.excepciones.OperacionInvalidaException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -147,7 +148,8 @@ public class ServicioCarritoMock implements IServicioCarritoMockRemote, IServici
         } catch (CupoInsuficienteException ex) {
             System.out.println("Se va a realizar el rollback controlado");
             context.setRollbackOnly();
-            // Dito: Por qué no se ejecuta?
+        } catch (OperacionInvalidaException e){
+            context.setRollbackOnly();
         }
     }
 

@@ -7,6 +7,7 @@ package com.losalpes.servicios;
 
 import com.losalpes.entities.RegistroVenta;
 import com.losalpes.excepciones.CupoInsuficienteException;
+import com.losalpes.excepciones.OperacionInvalidaException;
 import java.util.List;
 import javax.ejb.Local;
 
@@ -16,5 +17,5 @@ import javax.ejb.Local;
  */
 @Local
 public interface IPersistenciaCMTLocal {
-     public void comprar(List<RegistroVenta> compra) throws CupoInsuficienteException;
+     public void comprar(List<RegistroVenta> compra) throws CupoInsuficienteException, OperacionInvalidaException;
 }

@@ -7,6 +7,7 @@ package com.losalpes.servicios;
 
 import com.losalpes.entities.RegistroVenta;
 import com.losalpes.excepciones.CupoInsuficienteException;
+import com.losalpes.excepciones.OperacionInvalidaException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -41,7 +42,7 @@ public class PersistenciaCMT implements IPersistenciaCMTLocal {
     
     @Override
     @TransactionAttribute(TransactionAttributeType.REQUIRED)
-    public void comprar(List<RegistroVenta> compraTotal){
+    public void comprar(List<RegistroVenta> compraTotal) throws CupoInsuficienteException, OperacionInvalidaException {
         System.out.println("Llego a servicio de compra por User");
         String sql = null;
 
@@ -72,7 +73,7 @@ public class PersistenciaCMT implements IPersistenciaCMTLocal {
             System.out.println("Schema conectado:" + con.getSchema());
 
             Statement stmt = con.createStatement();
-            sql = "SELECT NUMERO, CUPO FROM APP.TARJETACREDITOALPES WHERE NUMERO=" + documentoCliente;
+            sql = "SELECT NUMERO, CUPO FROM TARJETACREDITOALPES WHERE NUMERO=" + documentoCliente;
             System.out.println("Sentencia a ejecutar:" + sql);
             rs = stmt.executeQuery(sql);
 
@@ -99,8 +100,11 @@ public class PersistenciaCMT implements IPersistenciaCMTLocal {
             pstmtUpdate.executeUpdate();
             
            
-        } catch (Exception ex) {
-        } finally {
+        } catch (CupoInsuficienteException ex) {
+            throw ex;
+        } catch (Exception e){
+            throw new OperacionInvalidaException("Se ha presentado un error realizando la compra");
+        }finally {
             if (rs != null) {
                 try {
                     rs.close();

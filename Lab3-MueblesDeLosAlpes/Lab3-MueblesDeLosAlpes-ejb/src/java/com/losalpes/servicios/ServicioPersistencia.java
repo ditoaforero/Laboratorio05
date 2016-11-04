@@ -124,19 +124,9 @@ public class ServicioPersistencia implements IServicioPersistenciaMockLocal, ISe
 
 
     @Override
-    public void comprar(List<RegistroVenta> compraTotal) throws CupoInsuficienteException{
-        try {
-            System.out.println("Llego al servicio de persistencia de compra");
-            persistenciaCMT.comprar(compraTotal);
-            //persistenciaBMT.comprar(compraTotal);
-        } catch (CupoInsuficienteException ex){
-            System.out.println("Se recupero la excepcion y se va a volver a lanzar en ServicioPersistencia");
-            throw new CupoInsuficienteException(ex.getMessage());
-        }
+    public void comprar(List<RegistroVenta> compraTotal) throws CupoInsuficienteException, OperacionInvalidaException{
+        System.out.println("Llego al servicio de persistencia de compra");
+        persistenciaCMT.comprar(compraTotal);
     }
-
-
-
-    
 
 }
