@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group/>
+        <group name="Taller05">
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/src/java/com/losalpes/excepciones/CupoInsuficienteException.java</file>
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/src/java/com/losalpes/entities/RegistroVenta.java</file>
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/src/java/com/losalpes/entities/Ciudad.java</file>
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/src/java/com/losalpes/servicios/IPersistenciaCMTLocal.java</file>
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/src/java/com/losalpes/servicios/ServicioSeguridadMock.java</file>
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/src/java/com/losalpes/servicios/IPersistenciaBMTLocal.java</file>
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/src/java/com/losalpes/excepciones/AutenticacionException.java</file>
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/src/java/com/losalpes/servicios/IServicioCarritoMockLocal.java</file>
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/src/java/com/losalpes/servicios/IServicioSeguridadMockLocal.java</file>
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/test/com/losalpes/servicios/ServicioVendedoresMockTest.java</file>
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/src/java/com/losalpes/servicios/PersistenciaBMT.java</file>
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/src/conf/persistence.xml</file>
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/src/java/com/losalpes/entities/Usuario.java</file>
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/src/java/com/losalpes/excepciones/OperacionInvalidaException.java</file>
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/src/java/com/losalpes/servicios/PersistenciaCMT.java</file>
+            <file>file:/home/dito/laboratorios-componentes/laboratorio5/laboratorio5/Lab3-MueblesDeLosAlpes/Lab3-MueblesDeLosAlpes-ejb/test/com/losalpes/pojos/PojoTest.java</file>
+        </group>
+    </open-files>
+</project-private>
